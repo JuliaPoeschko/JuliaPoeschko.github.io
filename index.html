@@ -264,13 +264,11 @@ pre[data-line] .line-highlight[data-end]:after {
       <style>
 .generalRules {
   display: flex;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Arial", Times, serif;
   flex-direction:column;
   max-width: 960px
 }
-h1 {
-  font-style: italic;
-}
+[comment]: # h1 {font-style: italic; } I don't want italic title
 .titleTextContent {
   border: 4px solid; 
 }
@@ -279,11 +277,17 @@ img {
 }
 .titleImage {
   flex-basis: 40%;
+  [comment]: # margin: 0 auto;
+}
+.text {
+  text-align: justify;
+  font-size: 15px;
+  padding: 0px;
 }
 .titleText {
   text-align: justify;
-  font-size: 18px;
-  padding: 15px;
+  font-size: 16px;
+  padding: 5px;
   font-weight: bold;
 }
 .sectionHeader {
@@ -291,12 +295,14 @@ img {
   text-align: left;
   font-size: 35px;
   font-weight: 500;
-  color: #002FBD;
+  color: #9A64A0;
   line-height: 45px;
-}
+
+[comment]: # brown color: 86624C, light brown: CAB1A2, grey: 878197, violet: 9A64A0, light  violet: CBAECE }
+
 .horizontalLine {
   width: 100%;
-  border-top:4px solid #002FBD; 
+  border-top:4px solid #9A64A0; 
   padding-bottom: 10px;
 }
 .sectionTextBox {
@@ -304,7 +310,7 @@ img {
 }
 .sectionText {
   text-align: justify;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -315,7 +321,7 @@ img {
   padding: 10px;
 }
 .downloadContainer {
-  background-color: #002FBD;
+  background-color: #CBAECE;
   height: 150px;
   width: 100%;
   color: white;
@@ -323,7 +329,7 @@ img {
   text-align: center;
 }
 .downloadbutton {
-  background-color: #002FBD;
+  background-color: #878197;
   border: 5px solid white;
   border-left: 50px solid white;
   border-right: 50px solid white;
@@ -340,25 +346,44 @@ img {
 </style>
 
 <div class="generalRules">
-<h1> This is the title of your choice. </h1>
-<div class="titleImage">
-<img width="400" height="300" src="images/placeholder.png">
+<h1> Predicting therapeutic success in clinical depression: Are machine learning algorithms a good use? </h1>
+<div class="text">
+23 May 2023, Julia P&#xF6;schko
 </div>
+</div>
+<p>&#xA0;</p>
+<div class="titleImage">
+<p align="center">
+<img width="449.96" height="300" src="images/psychotherapy.jpg">
+</p></div>
 <div class="titleTextContent">
 <div class="titleText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Clinical depression is one of the most common clinical disorders worldwide. When dealing with depressive disorders, timely diagnoses and adequate treatment plans play a crucial role. However, patients do not respond equally well to different methods of treatment, and in fact, one third of patients are resistant to standard antidepressant treatments. Thus, developing knowledge about patients&#x2019; characteristics and their influence on treatment success becomes more and more important. To predict therapeutic success in depressed populations, studies have begun to investigate the use of machine learning algorithms. But are they actually capable of making accurate predictions in this clinical context? With this question in mind, Lee and colleagues conducted the meta-analysis &#xBB;Applications of machine learning algorithms to predict therapeutic outcomes in depression: A meta-analysis and systematic review&#xAB;, published in 2018, to summarize previous findings on this research topic.
 </div>
 </div>
+<p>&#xA0;</p>
 <div class="sectionHeader">
-  METAANALYSIS
+  Meta-Analysis: Overview
   <div class="horizontalLine"> </div>
 </div>
+<br>
 <div class="sectionTextBox">
 <div class="sectionText">
-<b>Lorem ipsum</b> dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+<b>Focus of the study:</b> Prediction of depression-related therapeutic outcomes using machine learning algorithms 
 </div>
 <div class="sectionText">
-<b>Lorem ipsum</b> dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+<b>Target group:</b> Adults ages 18 or above with unipolar or bipolar depression, fulfilling the criteria provided by a diagnostic manual
+</div>
+<div class="sectionText">
+<b>Average effect size:</b> Machine learning models predicted therapeutic outcomes in depressed adults with a total classification accuracy of 0.82 (95% CI: [0.77, 0.87]).
+</div>
+<div class="sectionText">
+<b>Additional results:</b> 
+<ul>
+  <li>Machine learning models that integrate multiple predictive factors (phenomenological, neuroimaging, genetic) showed better prediction accuracy than models that include just one type. </li>
+  <li>In some studies, machine learning algorithms were reported to be more powerful to detect effects compared to traditional methods.</li>
+  <li>Publication bias was found.</li>
+</ul>
 </div>
 </div>
 <div class="spaceBetween"></div>
@@ -369,18 +394,22 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 </a>
 </div>
 <div class="spaceBetween"></div>
+<div class="spaceBetween"></div>
 <div class="sectionHeader">
-  READ SHORT REVIEW ONLINE
+  Read Short Review Online
   <div class="horizontalLine"> </div>
 </div>
+<br>
 <div class="sectionTextBox">
 <div class="sectionText">
 <b>Introduction</b>
 </div>
 <div class="sectionText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+<b>Clinical depression</b>, or, more formally, major depressive disorder (MDD), is a mental disorder with persistent symptoms such as overwhelming feelings of sadness, worthlessness, guilt, hopelessness, and anhedonia. MDD is one of the most prevailing clinical disorders, and the most common affective disorder. Generally, patients who remit earlier tend to have better, non-lasting outcomes. However, timely diagnoses and treatments are rare, and <b>treatment selection</b> is a trial-and-error process, since patients do not respond equally well to different methods of treatment. In fact, about one-third of MDD-patients are not sensitive to the standard antidepressant treatments.
 <p></p>
-<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p> Thus, the identification of <b>reliable predictors of therapeutic outcomes</b> constitutes an important factor to improve on-time diagnoses and treatment. However, previously conducted studies have not found single variables that robustly predict therapeutic outcomes, but researchers emphasize the need to <b>integrate multiple factors</b> and sources to make accurate predictions. Suitable for integrating a large number of variables and analyzing their relevance for specific outcomes is the approach of machine learning. </p>
+<p></p>
+<p> <b>Machine learning</b> denotes a set of computational methods that make use of algorithms to recognize patterns in data and to predict output from certain input (Helm et al., 2020). In the recent past, studies have begun to investigate predictors of therapeutic results in depression using such machine learning methods. However, no meta-analysis has yet been conducted to review and summarize the findings of these studies. This was set as the aim of the current meta-analysis. </p>
 </div>
 </div>
 <div class="spaceBetween"></div>
@@ -390,9 +419,36 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <b>What is this study about?</b>
 </div>
 <div class="sectionText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+The goal of this study is to review and summarize previous research that investigated the <b>application of machine learning models for prediction of therapeutic results</b> in depressed adults. By doing this, the meta-analysis wants to identify how and to what extent prior research has used machine learning algorithms to establish knowledge about the selection and individualization of therapeutic treatments for clinical depression.
 <p></p>
-<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p> To conduct the meta-analysis, the authors searched through various databases to find suitable research articles. Articles were selected according to following broad <b>inclusion criteria</b>: 
+</p><ul>
+  <li> Publication date prior to February 8, 2018 </li>
+  <li> A machine learning algorithm was applied</li>
+  <li>Patient-level or group-level data as predicting variables</li>
+  <li> Sample consisting of adults aged 18 or above with unipolar or bipolar depression, diagnosed by a diagnostic manual</li>
+  <li>Intervention being at least one evidenced-based treatment for depression (e.g., psychotherapy, pharmacotherapy)</li>
+  <li>Standardized measure of therapeutic outcome </li>
+  <li>Prospective or retrospective study design, open-labelled or controlled study, with or without randomization</li>
+</ul>
+<p></p>
+<p></p>
+<p> The initial search, conducted by searching through the databases with topic-related keywords like &#x2018;mood disorder&#x2019; and &#x2018;machine learning&#x2019;, yielded an overall amount of 639 articles. However, after excluding articles that did not meet the inclusion criteria, the authors were left with 26 studies for the qualitative analysis (review), and from those, <b>20 for the quantitative analysis</b> (meta-analysis). The overall sample of the meta-analysis includes 6325 participants. Most of the considered studies are peer-reviewed research articles published in journals. The majority was published after 2015, suggesting an upward trend in the number of publications since then. The oldest study was from 2004. The articles were conducted in diverse countries, including the USA, Canada, UK, Australia, Austria, Italy, Germany, Netherlands, China, and Malaysia. </p>
+<p></p>
+<p> Concerning <b>machine learning</b>, most of the articles utilized <b>classification</b>, a supervised machine learning approach. A classification algorithm is trained on a labeled dataset and in this research context, learns to correctly classify patients as treatment responders or non-responders based on predicting variables. Besides this, two studies utilized a <b>clustering</b> method, an unsupervised machine learning approach. In clustering algorithms, patients are clustered regarding their therapeutic outcomes, with the aim to subsequently identify differentiating factors. However, the studies that made use of clustering were not included in the quantiative analysis.
+ </p>
+<p></p>
+<p> A range of variables were used in the considered studies as <b>predictors of therapeutic outcomes</b>. To group them for the meta-analyis, the authors allocated them to specific classes, being <b>&#x2018;neuroimaging&#x2019;, &#x2018;phenomenological&#x2019;, &#x2018;genetic&#x2019; or &#x2018;combined&#x2019;</b>. Neuroimaging predictors refer to neuroanatomical structural or functional connectivity aspects, measured by electroencephalography (EEG) and structural (MRI) or functional Magnetic Resonance Imaging (fMRI). Phenomenological variables include sociodemographic, anthropometric , psychometric, or neurocognitive aspects or aspects about the psychiatric background. Genetic factors relate to specific genetic markers that are found to be associated with therapeutic responses, by for example having an impact on serotonin brain receptors. </p>
+<p></p>
+<p> To summarize the findings of the included research articles, the authors analyzed the <b>overall classification accuracy</b> of the machine learning models, expressed as a proportion between 0 and 1 (0-100%). This corresponds to the percentage of correctly classified subjects into treatment responders or non-responders. Beyond this meta-analysis of classification accuracy, the authors also conducted a <b>meta-regression analysis</b>. This technique is used to investigate how certain characteristics of the incorporated studies relate to variation of the classification accuracy. Such characteristics are called <b>moderators</b> (moderating variables). Moderators that were investigated by the authors - in terms of whether they have an impact on the classification accuracy - were:
+</p><ul>
+  <li>Type of predictor variable (&#x2018;neuroimaging&#x2019;, &#x2018;phenomenological&#x2019;, &#x2018;genetic&#x2019;, or &#x2018;combined&#x2019;). </li>
+  <li> Machine learning technique</li>
+  <li> Date of study publication</li>
+  <li> Country of the affiliation of the primary study author</li>
+  <li> Impact factor: a ranking of scientific journals regarding their number of citations and published articles, to determine journals with the highest scientific influence within its research area (Casadevall &amp; Fang, 2014; Garfield, 2006) </li>
+</ul>
+ <p></p>
 </div>
 </div>
 <div class="spaceBetween"></div>
@@ -402,33 +458,50 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <b>What does this study find?</b>
 </div>
 <div class="sectionText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+The <b>meta-analysis of the classification accuracy</b> came to following results: In consideration of all the included studies, the overall classification accuracy of the machine learning models was 0.82 (95% CI: [0.77, 0.87]). This implies that in 82% of the cases, the machine learning algorithm was able to correctly classify the therapeutic outcome (treatment responders vs. non-responders). This result suggests that overall, machine learning models are capable of predicting therapeutic outcomes.
 <p></p>
-<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p> When considering the different types of predictor variables, the use of combined predictors was associated with higher accuracy outcomes (accuracy = 0.93, 95% CI: [0.86, 0.97]) compared to the other types (neuroimaging: 0.85 [0.81, 0.88], phenomenological: 0.76 [0.63, 0.87], genetic: 0.68 [0.62, 0.74]), and this difference in accuracy was statistically significant (&#x3C7;2 = 31.39, df = 3, p &lt; 0.0001). These findings imply that the use of several predicting variables increase the accuracy of predictin.</p>
+<p></p>
+<p> The <b>moderator analysis</b> (in the meta-regression analysis) yielded similar results: The classification accuracy was moderated by the type of predictor variable (QM = 8.70, df = 3, p = 0.0335; QE = 137.90, df = 17, p &lt; .0001), suggesting that depending on the type of variable used for making predictions, the classification accuracy increases or decreases. However, no other moderating effects were found. </p>
+<p></p>
+<p> In the <b>qualitative analysis</b>, the authors additionally review findings of studies which compared machine learning techniques to more conventional statistical methods. Overall, differences in the findings between both approaches were found. Three studies failed to find effects using conventional methods, while machine learning approaches predicted therapeutic outcomes with an accuracy between 78% and 91%. In another study, conventional analyses were able to demonstrate some of the demographic and clinical predictors that an artificial neural network was able to establish. These findings emphasize the power of machine learning methods, specifically in complex research contexts like the prediction of therapeutic outcomes based on various factors. </p>
+<p></p>
+<p> One final aspect that the authors evaluated is the presence of <b>publication bias</b>. Publication bias refers to the selective publishing of studies: Findings that are statistically significant and preferred in their direction are generally more likely to be published than nonsignificant and unwanted results (Marks-Anglin &amp; Chen, 2020). The funnel plot is a commonly used method to check for publication bias, assessing whether the published studies are symmetric around the expected effect size. In the current meta-analysis, the funnel plot showed asymmetry, and the corresponding statistical test (Egger&#x2019;s test) yielded a significant result (slope = 0.94, p = 0.0026). These results both suggest the presence of a publication bias. The trim and fill-method, which adjusts for the asymmetry of studies, added 10 missing studies, leading to an adjusted estimation of the classification accuracy of 0.71 (95% CI: [0.64, 0.78]). 
+ </p>
 </div>
 </div>
 <div class="spaceBetween"></div>
 <div class="horizontalLine"> </div>
 <div class="sectionTextBox">
 <div class="sectionText">
-<b>How does the Digital Psychology Lab teaching evaluate this study?</b>
+<b>How does the Digital Psychology Lab Teaching evaluate this study?</b>
 </div>
 <div class="sectionText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+<b>How substantial is the outcome?</b> The overall classification accuracy was 0.82, and the largest accuracy was 0.93, reported for combined predictor variables. Although there is no universally used criterion or reference point that indicates the goodness of accuracy values, the accuracies stated here are in this context viewed as considerable, since 82% (93%) of subjects were classified correctly into treatment responders or non-responders. Thus, the findings of this meta-analysis be considered as substantial.
 <p></p>
-<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p> <b> How precise are the outcomes?</b> The classification accuracy was analyzed overall and for each predictor type (&#x2018;neuroimaging&#x2019;, &#x2018;phenomenological&#x2019;, &#x2018;genetic&#x2019;, &#x2018;combined&#x2019;). Furthermore, meta-regression analyses were conducted to assess whether certain study-specific variables have an impact on the classification accuracy outcome. Here, it was reported that &#x2018;combined&#x2019; predictors lead to more accurate predictions, while &apos;genetic&apos; predictors have lower accuracy. No other study-related aspects however displayed moderating effects on the classifcation accuracy. Overall, the results can be considered as precise.</p>
+<p></p>
+<p> <b>Is the outcome generalizable?</b> For study search and selection, broad inclusion criteria were utilized, beneficial for generalizability. The core results of the meta-analysis were derived from a sample of 20 studies, overall including a large sample of over 6000 subjects. The studies included in the meta-analysis analyzed various predictor variables and made use of different machine learning algorithms. Except for the predictor variable type, no moderation effects were found, suggesting the results are very robust in terms of classification technique, time frame, country, and impact factor. However, differences in accuracies were found for predictor variable type, and the results might not apply when using genetic predictor types due to their lower accuracy scores. Moreover, since the subjects were required to fulfill specific depression-related diagnostic criteria, the results can only be generalized within this psychiatric subgroup. In addition, generalization to young age groups is not possible, since the participant requirement was age 18 or above. Thus, overall, the results of the meta-analysis can be viewed as generalizable within some restrictions.</p>
+<p></p>
+<p> <b> How relevant is the outcome, scientifically and therapeutically?</b> The meta-analysis identified factors that predict therapeutic success robustly and showed that machine learning algorithms are capable of making predictions. This result has valuable implications for scientific research and therapeutic treatment of depression in the field. In research, machine learning models can be applied to gain more knowledge about predictors of therapeutic success &#x2013; to develop an understanding of patients&#x2019; characteristics and their associations to treatment outcomes. Such research findings in turn provide evidence that is useful in real-life therapeutical settings and can be used to improve individual treatment selection to be timely and less cost intensive.</p>
+<p></p>
+<p> <b> How high is the credibility of the outcome?</b>  The meta-analysis was conducted by considering the Cochrane Handbook for Systematic Reviews of Interventions, the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) statement, and the Joanna Briggs Institute&#x2019;s Manual for Scoping Reviews. In their article, the authors clearly described their search strategy to find relevant research articles and included a detailed list of search terms. Moreover, a PRISMA flow diagram was depicted, summarizing the search strategy. The authors stated which databases were used, and what the inclusion and exclusion criteria were for selecting articles.Non-refereed (grey) literature was not excluded from the analysis, beneficial to counteract publication bias, but possibly disadvantageous for research quality. Regarding publication bias, the authors conducted several assessments to obtain an estimation, including funnel plots, statistical tests and the trim and fill-method.  However, no information about interrater reliability for the process of rating each selected study was given. Overall, the quality of the meta-analysis can be considered as high, despite some minor points of criticism. However, the presence of publication bias should not be neglected. According to the trim and fill results, the classificatoin accuracy might in fact be lower than reported in the meta-analysis (0.71 instead of 0.82). </p>
 </div>
 </div>
 <div class="spaceBetween"></div>
 <div class="horizontalLine"> </div>
 <div class="sectionTextBox">
 <div class="sectionText">
-<b>Conclusion for teaching practice</b>
+<b>Conclusion for researchers, therapists, and depression-affected individuals</b>
 </div>
 <div class="sectionText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+The results of the meta-analysis suggest that machine learning can be a <b>powerful tool</b> to predict depression-related therapeutic outcomes. By using machine learning approaches, large numbers of variables can be analyzed regarding their prediction power, and patterns in data can be found that might not be detectable with conventional statistical methods.
 <p></p>
-<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p> Thus, applying this technology can be of <b>good use</b>, beneficial to researchers, therapists, and depression-affected individuals in general. For clinical research, the application of machine learning can help to improve models to predict treatment responses and deepen the knowledge about influential patient characteristics. For therapeutic settings, the findings emphasize the importance of considering multiple patient-related characteristics for treatment selection. By conducting further studies that utilize machine learning approaches, individualization of depression-related therapy can be further advanced, representing a promising outlook for depression-affected populations. </p>
+<p></p>
+<p> However, some <b>limitations</b> have to be mentioned in addition. Since publication bias was detected, the overall classification accuracy may be lower than reported in the analysis. Although machine learning is a powerful tool, some machine learning techniques do not give much insight into how results are obtained, or information about the individual variables&apos; relevance for prediction. This can result in missing information or lead to more serious problems, like discrimination against humans. </p>
+<p></p>
+<p> Overall, machine learning represents a promising technology in the field of predicting depression-related therapeutic outcomes, when not neglecting potentially negative or harmful aspects. </p>
 </div>
 </div>
 <div class="spaceBetween"></div>
@@ -438,9 +511,18 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <b>Study example</b>
 </div>
 <div class="sectionText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+Previous studies have demonstrated that in patients with major depressive disorder (MDD), <b>structural brain changes</b> and abnormalities in grey matter (GM) and white matter (WM) structures occur, possibly being the cause for depressive symptoms. To investigate which neurological markers in patients&#x2019; brain structures might reveal valuable information about individual treatment sensitivity, Liu et al. (2012) conducted a study focusing on magnetic resonance imaging (MRI) scans. 
 <p></p>
-<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p> For this purpose, Liu and colleagues recruited clinically depressed patients who were diagnosed with MDD according to standardized (DSM-4) criteria, in addition to 17 healthy controls (control-group). 17 subjects of the clinical group were affected by treatment-sensitive depression (TSD), while 18 patients had treatment-resistant depression (TRD). Severity of depressive symptoms was additionally measured, using the clinician-administered Hamilton Rating Scale for Depression (HRSD). </p>
+<p></p>
+<p> To analyze GM and WM brain structures in the MRI scans, three methods were used. Firstly, traditional <b>voxel-based analysis</b> was conducted, in which volumes of specific brain regions are compared between groups (with simple t-tests). Secondly, a modified <b>multivariable pattern analysis (MPVA)</b> was utilized. The MPVA combines several machine learning approaches, including a classification algorithm that learns to classify patients into groups based on brain scans. Thirdly, <b>correlational analyses</b> were performed to investigate associations between specific brain region volumes and the severity of depressive symptoms. </p>
+<p></p>
+<p> The results revealed that the MPVA method was able to <b>classify depressed patients as either treatment-sensitive or treatment-resistant with considerable accuracy</b> (up to 82.9%), based on GM and WM information from certain brain areas. Furthermore, the method was able to classify subjects as treatment-sensitive or healthy, and treatment-resistant or healthy, with accuracies up to 91.2%. These results imply that specific GM and WM areas in the brain reveal certain information about whether a person is depressed, and whether a depressed patient is sensitive or resistant to treatment. </p>
+<p></p>
+<p> When correlating the established brain regions in their volumes with the severity of depression (in all patients), statistically significant associations were found. However, in contrast to the findings above, the conventional <b>voxel-based analysis did not yield significant volumetric differences</b> in any brain areas between the TRD and TSD group.
+ </p>
+<p></p>
+<p> Overall, the results of this study suggest that structural MRI and MPVA might be valuable techniques to investigate neuroanatomical factors in their ability to distinguish between MDD patients and healthy controls, and between TRD and TSD patients. According to the authors, the <b>difference in findings between the conventional voxel-based analysis and MPVA</b> could be ascribed to the inability of the voxel-based analysis to identify subtle differences between the TRD and TSD groups. This constitutes a case that demonstrates the superiority of machine learning methods over traditional techniques. </p>
 </div>
 </div>
 <div class="spaceBetween"></div>
@@ -450,12 +532,30 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 <b>References</b>
 </div>
 <div class="sectionText">
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+<p> <b>Meta-analysis:</b> </p>
+<p>  </p><p style="text-align:left;">
+Lee, Y., Ragguett, R.-M., Mansur, R. B., Boutilier, J. J., Rosenblat, J. D., Trevizol, A., Brietzke, E., Lin, K., Pan, Z., Subramaniapillai, M., Chan, T. C. Y., Fus, D., Park, C., Musial, N., Zuckerman, H., Chen, V. C.-H., Ho, R., Rong, C., &amp; McIntyre, R. S. (2018). Applications of machine learning algorithms to predict therapeutic outcomes in depression: A meta-analysis and systematic review. <i> Journal of Affective Disorders, 241 </i>, 519&#x2013;532. <a href="https://doi.org/10.1016/j.jad.2018.08.073">https://doi.org/10.1016/j.jad.2018.08.073</a>
+ </p>
 <p></p>
-<p> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+<p> 
+<b>Study example:</b>:
+</p><p style="text-align:left;">
+Liu, F., Guo, W., Yu, D., Gao, Q., Gao, K., Xue, Z., Du, H., Zhang, J., Tan, C., Liu, Z., Zhao, J., &amp; Chen, H. (2012). Classification of different therapeutic responses of major depressive disorder with multivariate pattern analysis method based on structural MR scans. <i>PLoS ONE, 7</i>(7). <a href="https://doi.org/10.1371/journal.pone.0040968">https://doi.org/10.1371/journal.pone.0040968</a> </p>
+<p>
+<b>Additional references:</b>
+</p><p style="text-align:left;">
+Casadevall, A., &amp; Fang, F. C. (2014). Causes for the persistence of impact factor mania. <i>mBio, 5</i>(2), e00064-14. <a href="https://doi.org/10.1128/mbio.00064-14 ">https://doi.org/10.1128/mbio.00064-14  </a>  
+</p><p style="text-align:left;">
+Garfield, E. (2006). The history and meaning of the journal impact factor. <i>JAMA, 295</i>(1), 90. <a href="https://doi.org/10.1001/jama.295.1.90 ">https://doi.org/10.1001/jama.295.1.90   </a>
+</p><p style="text-align:left;">
+Helm, J. M., Swiergosz, A. M., Haeberle, H. S., Karnuta, J. M., Schaffer, J. L., Krebs, V. E., Spitzer, A. I., &amp; Ramkumar, P. N. (2020). Machine Learning and Artificial Intelligence: Definitions, applications, and future directions. <i>Current Reviews in Musculoskeletal Medicine, 13</i>(1), 69&#x2013;76. <a href="https://doi.org/10.1007/s12178-020-09600-8 ">https://doi.org/10.1007/s12178-020-09600-8 </a> 
+</p><p style="text-align:left;">
+Marks-Anglin, A., &amp; Chen, Y. (2020). A Historical Review of Publication Bias. <a href="https://doi.org/10.31222/osf.io/zmdpk  ">https://doi.org/10.31222/osf.io/zmdpk    </a>    
+</p>
+<p></p>
 </div>
 </div>
-</div>
+
  
 
       </div>
