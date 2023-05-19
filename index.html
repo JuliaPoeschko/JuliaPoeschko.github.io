@@ -261,7 +261,43 @@ pre[data-line] .line-highlight[data-end]:after {
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <style>
+      <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<style>
+  .collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 .generalRules {
   display: flex;
   font-family: "Arial", Times, serif;
@@ -335,7 +371,7 @@ img {
   border-right: 50px solid white;
   color: white;
   height: 50px;
-  width: 100%;
+  width: 90%;
   cursor: pointer;
   font-size: 20px;
   border-radius: 25px;
@@ -347,6 +383,10 @@ img {
 
 <div class="generalRules">
 <h1> Predicting therapeutic success in clinical depression: Are machine learning algorithms a good use? </h1>
+<p><button type="button" class="collapsible">Open Collapsible</button></p>
+<div class="content">
+  <p>Lorem ipsum...</p>
+</div>
 <div class="text">
 23 May 2023, Julia P&#xF6;schko
 </div>
@@ -552,7 +592,6 @@ Helm, J. M., Swiergosz, A. M., Haeberle, H. S., Karnuta, J. M., Schaffer, J. L.,
 </p><p style="text-align:left;">
 Marks-Anglin, A., &amp; Chen, Y. (2020). A Historical Review of Publication Bias. <a href="https://doi.org/10.31222/osf.io/zmdpk  ">https://doi.org/10.31222/osf.io/zmdpk    </a>    
 </p>
-<p></p>
 </div>
 </div>
 
