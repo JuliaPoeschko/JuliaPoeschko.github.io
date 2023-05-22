@@ -261,43 +261,7 @@ pre[data-line] .line-highlight[data-end]:after {
     </head>
     <body for="html-export">
       <div class="mume markdown-preview  ">
-      <script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
-<style>
-  .collapsible {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-.active, .collapsible:hover {
-  background-color: #ccc;
-}
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
+      <style>
 .generalRules {
   display: flex;
   font-family: "Arial", Times, serif;
@@ -331,14 +295,14 @@ img {
   text-align: left;
   font-size: 35px;
   font-weight: 500;
-  color: #9A64A0;
+  color: #1B4444;
   line-height: 45px;
 
-[comment]: # brown color: 86624C, light brown: CAB1A2, grey: 878197, violet: 9A64A0, light  violet: CBAECE }
+[comment]: # brown color: 86624C, light brown: CAB1A2, grey: 878197, violet: 9A64A0, light  violet: CBAECE, green: 1B4444 }
 
 .horizontalLine {
   width: 100%;
-  border-top:4px solid #9A64A0; 
+  border-top:4px solid #1B4444; 
   padding-bottom: 10px;
 }
 .sectionTextBox {
@@ -357,7 +321,7 @@ img {
   padding: 10px;
 }
 .downloadContainer {
-  background-color: #CBAECE;
+  background-color: #1B4444;
   height: 150px;
   width: 100%;
   color: white;
@@ -365,7 +329,7 @@ img {
   text-align: center;
 }
 .downloadbutton {
-  background-color: #878197;
+  background-color: #2A6968;
   border: 5px solid white;
   border-left: 50px solid white;
   border-right: 50px solid white;
@@ -383,10 +347,6 @@ img {
 
 <div class="generalRules">
 <h1> Predicting therapeutic success in clinical depression: Are machine learning algorithms a good use? </h1>
-<p><button type="button" class="collapsible">Open Collapsible</button></p>
-<div class="content">
-  <p>Lorem ipsum...</p>
-</div>
 <div class="text">
 23 May 2023, Julia P&#xF6;schko
 </div>
@@ -403,7 +363,7 @@ Clinical depression is one of the most common clinical disorders worldwide. When
 </div>
 <p>&#xA0;</p>
 <div class="sectionHeader">
-  Meta-Analysis: Overview
+  Overview: Meta-Analysis
   <div class="horizontalLine"> </div>
 </div>
 <br>
@@ -429,7 +389,7 @@ Clinical depression is one of the most common clinical disorders worldwide. When
 <div class="spaceBetween"></div>
 <div class="downloadContainer">
 <b>Download short review</b> 
-<a href="example.pdf">
+<a href="Short_Review_P&#xF6;schko_Julia.pdf">
 <button class="downloadbutton"> <b>Download PDF</b></button>
 </a>
 </div>
@@ -465,10 +425,10 @@ The goal of this study is to review and summarize previous research that investi
 </p><ul>
   <li> Publication date prior to February 8, 2018 </li>
   <li> A machine learning algorithm was applied</li>
-  <li>Patient-level or group-level data as predicting variables</li>
+  <li>Individual-level or group-level data as predicting variables</li>
   <li> Sample consisting of adults aged 18 or above with unipolar or bipolar depression, diagnosed by a diagnostic manual</li>
   <li>Intervention being at least one evidenced-based treatment for depression (e.g., psychotherapy, pharmacotherapy)</li>
-  <li>Standardized measure of therapeutic outcome </li>
+  <li>Longitudinal change in depression outcome, with a standardized measure of therapeutic improvement </li>
   <li>Prospective or retrospective study design, open-labelled or controlled study, with or without randomization</li>
 </ul>
 <p></p>
@@ -500,11 +460,11 @@ The goal of this study is to review and summarize previous research that investi
 <div class="sectionText">
 The <b>meta-analysis of the classification accuracy</b> came to following results: In consideration of all the included studies, the overall classification accuracy of the machine learning models was 0.82 (95% CI: [0.77, 0.87]). This implies that in 82% of the cases, the machine learning algorithm was able to correctly classify the therapeutic outcome (treatment responders vs. non-responders). This result suggests that overall, machine learning models are capable of predicting therapeutic outcomes.
 <p></p>
-<p> When considering the different types of predictor variables, the use of combined predictors was associated with higher accuracy outcomes (accuracy = 0.93, 95% CI: [0.86, 0.97]) compared to the other types (neuroimaging: 0.85 [0.81, 0.88], phenomenological: 0.76 [0.63, 0.87], genetic: 0.68 [0.62, 0.74]), and this difference in accuracy was statistically significant (&#x3C7;2 = 31.39, df = 3, p &lt; 0.0001). These findings imply that the use of several predicting variables increase the accuracy of predictin.</p>
+<p> When considering the different types of predictor variables, the use of combined predictors was associated with higher accuracy outcomes (accuracy = 0.93, 95% CI: [0.86, 0.97]) compared to the other types (neuroimaging: 0.85 [0.81, 0.88], phenomenological: 0.76 [0.63, 0.87], genetic: 0.68 [0.62, 0.74]), and this difference in accuracy was statistically significant (&#x3C7;2 = 31.39, df = 3, p &lt; 0.0001). These findings imply that the use of several predicting variables increase the accuracy of prediction.</p>
 <p></p>
 <p> The <b>moderator analysis</b> (in the meta-regression analysis) yielded similar results: The classification accuracy was moderated by the type of predictor variable (QM = 8.70, df = 3, p = 0.0335; QE = 137.90, df = 17, p &lt; .0001), suggesting that depending on the type of variable used for making predictions, the classification accuracy increases or decreases. However, no other moderating effects were found. </p>
 <p></p>
-<p> In the <b>qualitative analysis</b>, the authors additionally review findings of studies which compared machine learning techniques to more conventional statistical methods. Overall, differences in the findings between both approaches were found. Three studies failed to find effects using conventional methods, while machine learning approaches predicted therapeutic outcomes with an accuracy between 78% and 91%. In another study, conventional analyses were able to demonstrate some of the demographic and clinical predictors that an artificial neural network was able to establish. These findings emphasize the power of machine learning methods, specifically in complex research contexts like the prediction of therapeutic outcomes based on various factors. </p>
+<p> In the <b>qualitative analysis</b>, the authors additionally reviewed findings of studies which compared machine learning techniques to more conventional statistical methods. Overall, differences in the findings between both approaches were found. Three studies failed to find effects using conventional methods, while machine learning approaches predicted therapeutic outcomes with an accuracy between 78% and 91%. In another study, conventional analyses were able to demonstrate some of the demographic and clinical predictors that an artificial neural network was able to establish. These findings emphasize the superiority of machine learning methods in specific cases, specifically in complex research contexts like the prediction of therapeutic outcomes based on various factors. </p>
 <p></p>
 <p> One final aspect that the authors evaluated is the presence of <b>publication bias</b>. Publication bias refers to the selective publishing of studies: Findings that are statistically significant and preferred in their direction are generally more likely to be published than nonsignificant and unwanted results (Marks-Anglin &amp; Chen, 2020). The funnel plot is a commonly used method to check for publication bias, assessing whether the published studies are symmetric around the expected effect size. In the current meta-analysis, the funnel plot showed asymmetry, and the corresponding statistical test (Egger&#x2019;s test) yielded a significant result (slope = 0.94, p = 0.0026). These results both suggest the presence of a publication bias. The trim and fill-method, which adjusts for the asymmetry of studies, added 10 missing studies, leading to an adjusted estimation of the classification accuracy of 0.71 (95% CI: [0.64, 0.78]). 
  </p>
@@ -521,11 +481,11 @@ The <b>meta-analysis of the classification accuracy</b> came to following result
 <p></p>
 <p> <b> How precise are the outcomes?</b> The classification accuracy was analyzed overall and for each predictor type (&#x2018;neuroimaging&#x2019;, &#x2018;phenomenological&#x2019;, &#x2018;genetic&#x2019;, &#x2018;combined&#x2019;). Furthermore, meta-regression analyses were conducted to assess whether certain study-specific variables have an impact on the classification accuracy outcome. Here, it was reported that &#x2018;combined&#x2019; predictors lead to more accurate predictions, while &apos;genetic&apos; predictors have lower accuracy. No other study-related aspects however displayed moderating effects on the classifcation accuracy. Overall, the results can be considered as precise.</p>
 <p></p>
-<p> <b>Is the outcome generalizable?</b> For study search and selection, broad inclusion criteria were utilized, beneficial for generalizability. The core results of the meta-analysis were derived from a sample of 20 studies, overall including a large sample of over 6000 subjects. The studies included in the meta-analysis analyzed various predictor variables and made use of different machine learning algorithms. Except for the predictor variable type, no moderation effects were found, suggesting the results are very robust in terms of classification technique, time frame, country, and impact factor. However, differences in accuracies were found for predictor variable type, and the results might not apply when using genetic predictor types due to their lower accuracy scores. Moreover, since the subjects were required to fulfill specific depression-related diagnostic criteria, the results can only be generalized within this psychiatric subgroup. In addition, generalization to young age groups is not possible, since the participant requirement was age 18 or above. Thus, overall, the results of the meta-analysis can be viewed as generalizable within some restrictions.</p>
+<p> <b>Is the outcome generalizable?</b> For study search and selection, broad inclusion criteria were utilized, beneficial for generalizability. The core results of the meta-analysis were derived from a sample of 20 studies, overall including a large sample of over 6000 subjects. The studies included in the meta-analysis analyzed various predictor variables and made use of different machine learning algorithms. Except for the predictor variable type, no moderation effects were found, suggesting the results are very robust in terms of classification technique, time frame, country, and impact factor. However, differences in accuracies were found for predictor variable type, and the results might not apply when using genetic predictor types due to their lower accuracy scores. Moreover, since the subjects were required to fulfill specific depression-related diagnostic criteria, the results can only be generalized within this psychiatric subgroup. In addition, generalization to young age groups is not possible, since the participant requirement was age 18 or above. Therapeutic outcome in patients was measured with overall depressive symptom severity, which might not directly generalize to patients&apos; psychosocial or occupational functional recovery. Thus, overall, the results of the meta-analysis can be viewed as generalizable within some restrictions.</p>
 <p></p>
 <p> <b> How relevant is the outcome, scientifically and therapeutically?</b> The meta-analysis identified factors that predict therapeutic success robustly and showed that machine learning algorithms are capable of making predictions. This result has valuable implications for scientific research and therapeutic treatment of depression in the field. In research, machine learning models can be applied to gain more knowledge about predictors of therapeutic success &#x2013; to develop an understanding of patients&#x2019; characteristics and their associations to treatment outcomes. Such research findings in turn provide evidence that is useful in real-life therapeutical settings and can be used to improve individual treatment selection to be timely and less cost intensive.</p>
 <p></p>
-<p> <b> How high is the credibility of the outcome?</b>  The meta-analysis was conducted by considering the Cochrane Handbook for Systematic Reviews of Interventions, the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) statement, and the Joanna Briggs Institute&#x2019;s Manual for Scoping Reviews. In their article, the authors clearly described their search strategy to find relevant research articles and included a detailed list of search terms. Moreover, a PRISMA flow diagram was depicted, summarizing the search strategy. The authors stated which databases were used, and what the inclusion and exclusion criteria were for selecting articles.Non-refereed (grey) literature was not excluded from the analysis, beneficial to counteract publication bias, but possibly disadvantageous for research quality. Regarding publication bias, the authors conducted several assessments to obtain an estimation, including funnel plots, statistical tests and the trim and fill-method.  However, no information about interrater reliability for the process of rating each selected study was given. Overall, the quality of the meta-analysis can be considered as high, despite some minor points of criticism. However, the presence of publication bias should not be neglected. According to the trim and fill results, the classificatoin accuracy might in fact be lower than reported in the meta-analysis (0.71 instead of 0.82). </p>
+<p> <b> How high is the credibility of the outcome?</b>  The meta-analysis was conducted by considering several official guidelines, including the Cochrane Handbook for Systematic Reviews of Interventions, the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) statement, and the Joanna Briggs Institute&#x2019;s Manual for Scoping Reviews. In their article, the authors clearly described their search strategy to find relevant research articles and included a detailed list of search terms. Moreover, a PRISMA flow diagram was depicted, summarizing the search strategy. The authors stated which databases were used, and what the inclusion and exclusion criteria were for selecting articles.Non-refereed (grey) literature was not excluded from the analysis, beneficial to counteract publication bias, but possibly disadvantageous for research quality. Regarding publication bias, the authors conducted several assessments to obtain an estimation, including funnel plots, statistical tests and the trim and fill-method.  However, no information about interrater reliability for the process of rating each selected study was given. Overall, the quality of the meta-analysis can be considered as high, despite some minor points of criticism. However, the presence of publication bias should not be neglected. According to the trim and fill results, the classificatoin accuracy might in fact be lower than reported in the meta-analysis (0.71 instead of 0.82). </p>
 </div>
 </div>
 <div class="spaceBetween"></div>
@@ -555,14 +515,14 @@ Previous studies have demonstrated that in patients with major depressive disord
 <p></p>
 <p> For this purpose, Liu and colleagues recruited clinically depressed patients who were diagnosed with MDD according to standardized (DSM-4) criteria, in addition to 17 healthy controls (control-group). 17 subjects of the clinical group were affected by treatment-sensitive depression (TSD), while 18 patients had treatment-resistant depression (TRD). Severity of depressive symptoms was additionally measured, using the clinician-administered Hamilton Rating Scale for Depression (HRSD). </p>
 <p></p>
-<p> To analyze GM and WM brain structures in the MRI scans, three methods were used. Firstly, traditional <b>voxel-based analysis</b> was conducted, in which volumes of specific brain regions are compared between groups (with simple t-tests). Secondly, a modified <b>multivariable pattern analysis (MPVA)</b> was utilized. The MPVA combines several machine learning approaches, including a classification algorithm that learns to classify patients into groups based on brain scans. Thirdly, <b>correlational analyses</b> were performed to investigate associations between specific brain region volumes and the severity of depressive symptoms. </p>
+<p> To analyze GM and WM brain structures in the MRI scans, three methods were used. Firstly, traditional <b>voxel-based analysis</b> was conducted, in which volumes of specific brain regions are compared between groups (with simple t-tests). Secondly, a modified <b>multivariate pattern analysis (MVPA)</b> was utilized. The MVPA combines several machine learning approaches, including a classification algorithm that learns to classify patients into groups based on brain scans. Thirdly, <b>correlational analyses</b> were performed to investigate associations between specific brain region volumes and the severity of depressive symptoms. </p>
 <p></p>
-<p> The results revealed that the MPVA method was able to <b>classify depressed patients as either treatment-sensitive or treatment-resistant with considerable accuracy</b> (up to 82.9%), based on GM and WM information from certain brain areas. Furthermore, the method was able to classify subjects as treatment-sensitive or healthy, and treatment-resistant or healthy, with accuracies up to 91.2%. These results imply that specific GM and WM areas in the brain reveal certain information about whether a person is depressed, and whether a depressed patient is sensitive or resistant to treatment. </p>
+<p> The results revealed that the MVPA method was able to <b>classify depressed patients as either treatment-sensitive or treatment-resistant with considerable accuracy</b> (up to 82.9%), based on GM and WM information from certain brain areas. Furthermore, the method was able to classify subjects as treatment-sensitive or healthy, and treatment-resistant or healthy, with accuracies up to 91.2%. These results imply that specific GM and WM areas in the brain reveal certain information about whether a person is depressed, and whether a depressed patient is sensitive or resistant to treatment. </p>
 <p></p>
 <p> When correlating the established brain regions in their volumes with the severity of depression (in all patients), statistically significant associations were found. However, in contrast to the findings above, the conventional <b>voxel-based analysis did not yield significant volumetric differences</b> in any brain areas between the TRD and TSD group.
  </p>
 <p></p>
-<p> Overall, the results of this study suggest that structural MRI and MPVA might be valuable techniques to investigate neuroanatomical factors in their ability to distinguish between MDD patients and healthy controls, and between TRD and TSD patients. According to the authors, the <b>difference in findings between the conventional voxel-based analysis and MPVA</b> could be ascribed to the inability of the voxel-based analysis to identify subtle differences between the TRD and TSD groups. This constitutes a case that demonstrates the superiority of machine learning methods over traditional techniques. </p>
+<p> Overall, the results of this study suggest that structural MRI and MVPA might be valuable techniques to investigate neuroanatomical factors in their ability to distinguish between MDD patients and healthy controls, and between TRD and TSD patients. According to the authors, the <b>difference in findings between the conventional voxel-based analysis and MVPA</b> could be ascribed to the inability of the voxel-based analysis to identify subtle differences between the TRD and TSD groups. This constitutes a case that demonstrates the superiority of machine learning methods over traditional techniques. </p>
 </div>
 </div>
 <div class="spaceBetween"></div>
@@ -591,7 +551,10 @@ Garfield, E. (2006). The history and meaning of the journal impact factor. <i>JA
 Helm, J. M., Swiergosz, A. M., Haeberle, H. S., Karnuta, J. M., Schaffer, J. L., Krebs, V. E., Spitzer, A. I., &amp; Ramkumar, P. N. (2020). Machine Learning and Artificial Intelligence: Definitions, applications, and future directions. <i>Current Reviews in Musculoskeletal Medicine, 13</i>(1), 69&#x2013;76. <a href="https://doi.org/10.1007/s12178-020-09600-8 ">https://doi.org/10.1007/s12178-020-09600-8 </a> 
 </p><p style="text-align:left;">
 Marks-Anglin, A., &amp; Chen, Y. (2020). A Historical Review of Publication Bias. <a href="https://doi.org/10.31222/osf.io/zmdpk  ">https://doi.org/10.31222/osf.io/zmdpk    </a>    
-</p>
+<br>
+<br>
+</p><p>Picture: uploaded by cottonbro studio on Pexels for free use (<a href="https://www.pexels.com/de-de/foto/mann-paar-menschen-buro-4101143/">https://www.pexels.com/de-de/foto/mann-paar-menschen-buro-4101143/</a>)</p>
+<p></p>
 </div>
 </div>
 
